@@ -1,0 +1,76 @@
+import { Bleed } from "nextra-theme-docs";
+import { Tab, Tabs } from "nextra/components";
+import { Callout } from "nextra/components";
+import { Cards, Card } from "nextra/components";
+//import { CardsIcon, OneIcon, WarningIcon } from '../../icons'
+import { Steps } from "nextra/components";
+
+<Bleed>![Nextra Example](/vercel.svg)</Bleed>
+
+```
+Type: 'default' | 'info' | 'warning' | 'error'
+Default: 'default'
+
+
+
+```
+
+<Callout type="default" emoji="💡">
+  This is a `default` feature.
+</Callout>
+
+<Callout type="info" emoji="💡">
+  This is a `info` feature.
+</Callout>
+
+<Callout type="warning" emoji="💡">
+  This is a `warning` feature.
+</Callout>
+
+<Callout type="error" emoji="💡">
+  This is a `error` feature.
+</Callout>
+
+<Cards>
+  <Card title="Callout" href="/docs/guide/built-ins/callout" />
+  <Card title="Tabs" href="/docs/guide/built-ins/tabs" />
+  <Card title="Steps" href="/docs/guide/built-ins/steps" />
+</Cards>
+
+<Steps>
+### Step 1
+ 
+Contents for step 1.
+ 
+### Step 2
+ 
+Contents for step 2.
+
+### Step 3
+
+Contents for step 3.
+
+</Steps>
+
+<Tabs items={['JavaScript', 'C++', {label:'C', disabled: true}, 'Python']} defaultIndex={1}>
+  <Tab>
+    ```js filename="hi.js"
+    import { useState, useEffect } from 'react';
+    ```
+  </Tab>
+  <Tab>
+    ```cpp filename="hi.cpp"
+    #include <iostream>
+    ```
+  </Tab>
+  <Tab>
+    ```c filename="hi.c"
+    #include <stdio.h>
+    ```
+  </Tab>
+  <Tab>
+     ```python filename="hello.py"
+    print('Hello, world!')
+    ```
+  </Tab>
+</Tabs>
