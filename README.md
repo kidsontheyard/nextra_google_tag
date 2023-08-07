@@ -1,5 +1,6 @@
-# 
-Fix to issue: #2130 Google Tag Manager - cross-site errors when using next/script
+# Fix to issue: shuding/nextra #2130 Google Tag Manager
+
+Error: cross-site errors when using next/script
 
 [https://github.com/shuding/nextra/issues/2130](https://github.com/shuding/nextra/issues/2130)
 
