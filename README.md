@@ -4,19 +4,19 @@ Error: cross-site errors when using next/script
 
 [https://github.com/shuding/nextra/issues/2130](https://github.com/shuding/nextra/issues/2130)
 
+## Solution
 
-## Solution 
-
-1. Google Tag is NOT Google Analytics, and not the same scripts (what you used is google analytics gtag script that loads from Google Tag Manager) 
-2. Google Tag requires two parts one install at the header and one install in the body, including iframe 
+1. Google Tag is NOT Google Analytics, and not the same scripts (what you used is google analytics gtag script that loads from Google Tag Manager)
+2. Google Tag requires two parts one install at the header and one install in the body, including iframe
 
 The issue is that I try to apply the same way we apply google analytics to google tag manager, and this will create cross-site errors when google tag injects code using `document.write`
 
 To solve it we need to load the two parts with a different strategy
+
 1. `beforeInteractive` - for the Header
 2. `afterInteractive` - for the body
 
-The full solution for Google Tag Manager, tested on a live server 
+The full solution for Google Tag Manager, tested on a live server
 `next@13.4.13`
 `nextra@2.10.0`
 `react@18.2.0`
@@ -26,7 +26,6 @@ Create a file `/.env.local` in the root of the project
 ```
 NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID=
 ```
-
 
 Create a file `pages/_app.mdx`
 
@@ -84,9 +83,6 @@ How to set up a Google Tag Manager to add Google Analytics on all pages.
 ![Google Tag Manager](https://github.com/kidsontheyard/nextra_google_tag/raw/main/doc/google-tag-manager_1.png)
 
 ![Google Tag Manager](https://github.com/kidsontheyard/nextra_google_tag/raw/main/doc/google-tag-manager_2.png)
-
-
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

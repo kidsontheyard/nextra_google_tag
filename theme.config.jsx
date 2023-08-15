@@ -2,14 +2,16 @@
 export default {
   useNextSeoProps() {
     return {
-      titleTemplate: "%s : Legal Hub (@) Kids on the Yard",
+      titleTemplate: "%s : Kids on the Yard",
     };
   },
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="Legal Hub (@) Kids on the Yard" />
-      <meta property="og:description" content="Kids on the Yard Policies" />
+      <meta property="og:title" content="Kids on the Yard" />
+      <meta property="og:description" content="Kids on the Yard" />
+      <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+      <link rel="mask-icon" href="/favicon.svg" type="image/svg+xml" />
     </>
   ),
   logo: (
@@ -23,9 +25,9 @@ export default {
   feedback: {
     content: null,
   },
-  sidebar: {
-    toggleButton: true,
-    autoCollapse: true,
+  sidebar:{
+    toggleButton:true,
+    autoCollapse:true,
   },
   gitTimestamp: null,
   footer: {
