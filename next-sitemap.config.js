@@ -4,7 +4,7 @@
  *
  */
 module.exports = {
-  siteUrl: process.env.SITE_BASE_URL || "https://legalhub.kidsontheyard.com",
+  siteUrl: process.env.SITE_BASE_URL || "https://nextra.kidsontheyard.dev",
   changefreq: "daily",
   priority: 0.7,
   sitemapSize: 5000,
