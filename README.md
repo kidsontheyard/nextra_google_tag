@@ -86,6 +86,12 @@ How to set up a Google Tag Manager to add Google Analytics on all pages.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Demo
+
+Live demo can be found on: 
+https://nextra.kidsontheyard.dev
+
 ## Getting Started
 
 First, run the development server:
