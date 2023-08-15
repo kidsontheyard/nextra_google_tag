@@ -23,9 +23,9 @@ export default {
   feedback: {
     content: null,
   },
-  sidebar:{
-    toggleButton:true,
-    autoCollapse:true,
+  sidebar: {
+    toggleButton: true,
+    autoCollapse: true,
   },
   gitTimestamp: null,
   footer: {
